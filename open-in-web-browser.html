@@ -342,7 +342,7 @@ console.log(reduceMethod) // logs 27
                     <strong>right to left</strong> and returning a final value.</p>
 
                 <pre class="line-numbers"><code class="language-js">
-// add up numbers in array from left to right i.e. (((2+5) +5 ) + 5)
+// add up numbers in array from right to left i.e. (((2+5) +5 ) + 5)
 var reduceRightMethod = [5, 5, 5, 2].reduceRight(function(accumulator, value, valueIndex, wholeArray){
     return accumulator + value;
 });
@@ -351,7 +351,7 @@ console.log(reduceRightMethod) // logs 17
 /** reduce also accepts a second parameter that sets the first accumulator value,
 instead of using the first value in the array. **/
 
-// add up numbers in array from left to right, but start at 10 i.e. ((((10+2) + 5 ) +5 ) + 5)
+// add up numbers in array from right to left, but start at 10 i.e. ((((10+2) + 5 ) +5 ) + 5)
 var reduceRightMethod = [5, 5, 5, 2].reduceRight(function(accumulator, value, valueIndex, wholeArray){
     return accumulator + value; // first iteration of func accumulator is 10 not 5
 }, 10);
